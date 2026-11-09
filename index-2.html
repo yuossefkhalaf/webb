@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقعي | يوسف خلف - مبرمج ومطور منصات ومواقع إلكترونية</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Cairo Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            900: '#1e3a8a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(229, 231, 235, 0.7);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center text-white text-xl font-black shadow-lg shadow-blue-500/30">
+                    م
+                </div>
+                <span class="text-2xl font-extrabold text-slate-900 tracking-tight">موقعي</span>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-8 font-semibold text-slate-600">
+                <a href="#about" class="hover:text-blue-600 transition">عن المبرمج</a>
+                <a href="#services" class="hover:text-blue-600 transition">الخدمات</a>
+                <a href="#projects" class="hover:text-blue-600 transition">المشاريع</a>
+                <a href="#contact" class="hover:text-blue-600 transition">تواصل معي</a>
+            </nav>
+
+            <a href="https://wa.me/201104134362" target="_blank" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-bold text-white gradient-bg shadow-md hover:shadow-xl hover:scale-105 transition transform">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>تواصل عبر الواتساب</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-36 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6 text-right">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-50 border border-blue-100 text-blue-700 font-bold text-sm">
+                    <span class="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
+                    مُطور منصات ومواقع إلكترونية محترف
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-black text-slate-900 leading-tight">
+                    أهلاً بك، أنا <span class="gradient-text">يوسف خلف</span>
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed max-w-xl">
+                    أساعد الأفراد والشركات في تحويل أفكارهم إلى منصات إلكترونية ومتاجر تفاعلية حديثة بأعلى معايير السرعة والأمان والتجاوب مع جميع الأجهزة.
+                </p>
+                
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="https://wa.me/201104134362" target="_blank" class="px-7 py-3.5 rounded-xl font-bold text-white gradient-bg shadow-lg hover:shadow-blue-500/25 hover:-translate-y-0.5 transition flex items-center gap-3">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>ابدأ مشروعك الآن</span>
+                    </a>
+                    <a href="https://t.me/01104134362" target="_blank" class="px-7 py-3.5 rounded-xl font-bold text-slate-700 bg-white border border-slate-200 hover:bg-slate-100 transition flex items-center gap-3">
+                        <i class="fa-brands fa-telegram text-xl text-blue-500"></i>
+                        <span>تلجرام</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile / Visual Card -->
+            <div id="about" class="relative">
+                <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-blue-600 to-purple-600 blur opacity-30"></div>
+                <div class="relative glass-card p-8 rounded-3xl shadow-xl space-y-6">
+                    <div class="flex items-center gap-4 border-b border-slate-100 pb-6">
+                        <div class="w-16 h-16 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center text-3xl font-black">
+                            YK
+                        </div>
+                        <div>
+                            <h2 class="text-xl font-bold text-slate-900">يوسف خلف</h2>
+                            <p class="text-slate-500 text-sm">مطور ويب وسحابة إلكترونية</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-slate-500">الخبرة:</span>
+                            <span class="font-bold text-slate-800">تطوير المنصات التعليمية والمتاجر</span>
+                        </div>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-slate-500">البريد الإلكتروني:</span>
+                            <a href="mailto:khlfy037@gmail.com" class="font-bold text-blue-600 hover:underline">khlfy037@gmail.com</a>
+                        </div>
+                        <div class="flex items-center justify-between text-sm">
+                            <span class="text-slate-500">رقم الهاتف / الواتساب:</span>
+                            <span class="font-bold text-slate-800" dir="ltr">+20 110 413 4362</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-black text-slate-900 sm:text-4xl">الخدمات التي أقدمها</h2>
+                <p class="mt-4 text-slate-600">حلول برمجية متكاملة مصممة خصيصاً لتلبية احتياجات عملك وتنمية نشاطك التجاري.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:border-blue-200 hover:bg-blue-50/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">تطوير المنصات التعليمية</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        تصميم منصات تعليم تفاعلية للمعلمين والطلاب تشمل إدارة الكورسات، الفيديوهات، والاختبارات الأونلاين.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:border-blue-200 hover:bg-blue-50/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-purple-600 text-white flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">بناء المتاجر الإلكترونية</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        متاجر احترافية متكاملة مع بوابات الدفع الإلكتروني وإدارة المنتجات والطلبات والتجاوب السريع.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:border-blue-200 hover:bg-blue-50/50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-600 text-white flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">مواقع متجاوبة وسريعة</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        تصاميم عصرية تعمل بكفاءة عالية على كافة الشاشات والموبايل مع ضبط محركات البحث (SEO).
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-black text-slate-900 sm:text-4xl">نماذج من أعمالي</h2>
+                <p class="mt-4 text-slate-600">استعرض بعض أبرز المشاريع والمنصات التي قمت بتطويرها مؤخراً.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1: Physics Platform -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 hover:shadow-2xl transition">
+                    <div class="p-8 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="px-3 py-1 bg-white/20 backdrop-blur rounded-full text-xs font-bold">منصة تعليمية</span>
+                            <i class="fa-solid fa-[#atom] text-3xl opacity-80"></i>
+                        </div>
+                        <h3 class="text-2xl font-black">منصة الفيزياء التعليمية</h3>
+                        <p class="text-blue-100 text-sm mt-2">منصة متكاملة لشرح مادة الفيزياء وتدريب الطلاب على الامتحانات.</p>
+                    </div>
+                    <div class="p-8 space-y-4">
+                        <ul class="space-y-2 text-slate-600 text-sm">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> نظام حصص وفيديوهات مخصص</li>
+                            <li class="flex items-center gap-2"><li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> بنك أسئلة واختبارات تفاعلية</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> جروب ومجتمع تعليمي للتواصل</li>
+                        </ul>
+                        <a href="https://wa.me/201104134362?text=أود%20الاستفسار%20عن%20منصة%20الفيزياء" target="_blank" class="block text-center py-3 rounded-xl bg-slate-900 text-white font-bold hover:bg-blue-600 transition">
+                            اطلب منصة مماثلة
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: E-Commerce Store -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-lg border border-slate-100 hover:shadow-2xl transition">
+                    <div class="p-8 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="px-3 py-1 bg-white/20 backdrop-blur rounded-full text-xs font-bold">متجر إلكتروني</span>
+                            <i class="fa-solid fa-bag-shopping text-3xl opacity-80"></i>
+                        </div>
+                        <h3 class="text-2xl font-black">مشروع المتجر الإلكتروني المتكامل</h3>
+                        <p class="text-pink-100 text-sm mt-2">متجر تجارة إلكترونية ذكي يعرض المنتجات بسلاسة وسرعة فائقة.</p>
+                    </div>
+                    <div class="p-8 space-y-4">
+                        <ul class="space-y-2 text-slate-600 text-sm">
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> سلة تسوق ونظام واجهة مستخدم سريعة</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> لوحة تحكم لإدارة المنتجات والمبيعات</li>
+                            <li class="flex items-center gap-2"><i class="fa-solid fa-circle-check text-green-500"></i> ربط مباشر مع الواتساب والدفع</li>
+                        </ul>
+                        <a href="https://wa.me/201104134362?text=أود%20الاستفسار%20عن%20المتجر%20الإلكتروني" target="_blank" class="block text-center py-3 rounded-xl bg-slate-900 text-white font-bold hover:bg-purple-600 transition">
+                            اطلب متجرك الآن
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
+            <h2 class="text-3xl sm:text-4xl font-black text-slate-900">هل لديك مشروع جاهز للتنفيذ؟</h2>
+            <p class="text-slate-600 text-lg">تواصل معي بشكل مباشر وسنقوم بمناقشة فكرة مشروعك والبدء في تنفيذه فوراً.</p>
+
+            <div class="grid sm:grid-cols-3 gap-6 pt-6">
+                <a href="https://wa.me/201104134362" target="_blank" class="p-6 rounded-2xl bg-green-50 border border-green-200 flex flex-col items-center hover:scale-105 transition">
+                    <i class="fa-brands fa-whatsapp text-4xl text-green-600 mb-3"></i>
+                    <span class="font-bold text-slate-900">واتساب</span>
+                    <span class="text-xs text-slate-500 mt-1" dir="ltr">+20 110 413 4362</span>
+                </a>
+
+                <a href="mailto:khlfy037@gmail.com" class="p-6 rounded-2xl bg-blue-50 border border-blue-200 flex flex-col items-center hover:scale-105 transition">
+                    <i class="fa-solid fa-envelope text-4xl text-blue-600 mb-3"></i>
+                    <span class="font-bold text-slate-900">البريد الإلكتروني</span>
+                    <span class="text-xs text-slate-500 mt-1">khlfy037@gmail.com</span>
+                </a>
+
+                <a href="https://t.me/01104134362" target="_blank" class="p-6 rounded-2xl bg-sky-50 border border-sky-200 flex flex-col items-center hover:scale-105 transition">
+                    <i class="fa-brands fa-telegram text-4xl text-sky-600 mb-3"></i>
+                    <span class="font-bold text-slate-900">تلجرام</span>
+                    <span class="text-xs text-slate-500 mt-1" dir="ltr">01104134362</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-sm">جميع الحقوق محفوظة © 2026 - موقع البرمجة الشخصي لـ <span class="text-white font-bold">يوسف خلف</span></p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/201104134362" target="_blank" class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 text-white rounded-full flex items-center justify-center text-3xl shadow-2xl hover:bg-green-600 hover:scale-110 transition transform">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
